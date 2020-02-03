@@ -7,7 +7,7 @@ getInts = do
     return y
 
 a :: Int -> Int
-a x = 2^x
+a x = 2 * x
 
 ret :: [Int] -> Int -> Int -> Int
 ret hs c h
@@ -19,4 +19,3 @@ main = do
     let h = head ns
     let r = ret (iterate a 1) 0 h
     putStrLn $ show r
-    
